@@ -10,58 +10,63 @@ import {
   createReviewCard,
 } from "./utils.js";
 
-async function loadHomePage() {
-  /**
-   * Highlight Carousel
-   */
-  const highlightedPlaces = await placesRepository.getHighlightedPlaces();
-  const $highlightCarousel = document.querySelector("#hightlight-carousel");
+// Funções para manipulação do carrossel de destaques
+async function loadHighlightedPlaces() {
+  try {
+    const highlightedPlaces = await placesRepository.getHighlightedPlaces();
+    const $highlightCarousel = document.querySelector("#hightlight-carousel");
 
-  for (const [index, place] of highlightedPlaces.entries()) {
-    // Create the carousel item
-    const $carouselItem = createCarouselItem({
-      name: place.name,
-      image: place.thumbnail,
-      description: place.description,
-      href: `detalhe.html?slug=${place.slug}`,
-      index,
-    });
-    $highlightCarousel
-      .querySelector(".carousel-inner")
-      .appendChild($carouselItem);
+    for (const [index, place] of highlightedPlaces.entries()) {
+      const $carouselItem = createCarouselItem({
+        name: place.name,
+        image: place.thumbnail,
+        description: place.description,
+        href: `detalhe.html?slug=${place.slug}`,
+        index,
+      });
+      $highlightCarousel
+        .querySelector(".carousel-inner")
+        .appendChild($carouselItem);
 
-    // Create the indicator
-    const $indicator = createCarouselIndicator({
-      carouselId: "#hightlight-carousel",
-      label: place.name,
-      index,
-    });
-    $highlightCarousel
-      .querySelector(".carousel-indicators")
-      .appendChild($indicator);
-  }
-
-  const allPlaces = await placesRepository.getAllPlaces();
-  const $placeCardContainer = document.querySelector("#places");
-
-  for (const place of allPlaces) {
-    // Create the card
-    const $placeCard = createPlaceCard(place);
-    const $wrapper = div("col-12 col-sm-6 col-md-4 col-lg-3 mb-3");
-    $wrapper.appendChild($placeCard);
-
-    $placeCardContainer.appendChild($wrapper);
+      const $indicator = createCarouselIndicator({
+        carouselId: "#hightlight-carousel",
+        label: place.name,
+        index,
+      });
+      $highlightCarousel
+        .querySelector(".carousel-indicators")
+        .appendChild($indicator);
+    }
+  } catch (error) {
+    console.error("Error loading highlighted places:", error);
+    const $highlightCarousel = document.querySelector("#hightlight-carousel");
+    $highlightCarousel.innerHTML =
+      '<div class="alert alert-danger">Erro ao carregar destaques. Por favor, tente novamente mais tarde.</div>';
   }
 }
 
-async function loadDetailPage() {
-  const slug = getSearchParam("slug");
-  const place = await placesRepository.getPlaceBySlug(slug);
+// Funções para manipulação da lista de lugares
+async function loadAllPlaces() {
+  try {
+    const allPlaces = await placesRepository.getAllPlaces();
+    const $placeCardContainer = document.querySelector("#places");
 
-  if (!place) {
-    window.location.href = "/";
+    for (const place of allPlaces) {
+      const $placeCard = createPlaceCard(place);
+      const $wrapper = div("col-12 col-sm-6 col-md-4 col-lg-3 mb-3");
+      $wrapper.appendChild($placeCard);
+      $placeCardContainer.appendChild($wrapper);
+    }
+  } catch (error) {
+    console.error("Error loading all places:", error);
+    const $placeCardContainer = document.querySelector("#places");
+    $placeCardContainer.innerHTML =
+      '<div class="alert alert-danger">Erro ao carregar lugares. Por favor, tente novamente mais tarde.</div>';
   }
+}
 
+// Funções para manipulação da página de detalhes
+function updatePlaceBasicInfo(place) {
   document.querySelector("#place-name").textContent = place.name;
   document.querySelector("#place-description").textContent = place.description;
   document
@@ -74,41 +79,43 @@ async function loadDetailPage() {
   document.querySelector("#place-price-range").textContent =
     place.info.priceRange;
   document.querySelector("#place-website").textContent = place.info.website;
+}
 
-  // Detaques
+function loadPlaceHighlights(highlights) {
   const $highlightList = document.querySelector("#place-highlights");
-  for (const highlight of place.highlights) {
+  for (const highlight of highlights) {
     const $highlightItem = div("list-group-item");
     $highlightItem.textContent = highlight;
     $highlightList.appendChild($highlightItem);
   }
+}
 
-  // Comodidades
+function loadPlaceAmenities(amenities) {
   const $amenitiesList = document.querySelector("#place-amenities");
-  for (const amenitie of place.info.amenities) {
-    const $amenitieItem = div("list-group-item");
-    $amenitieItem.textContent = amenitie;
-    $amenitiesList.appendChild($amenitieItem);
+  for (const amenity of amenities) {
+    const $amenityItem = div("list-group-item");
+    $amenityItem.textContent = amenity;
+    $amenitiesList.appendChild($amenityItem);
   }
+}
 
-  // Comodidades
+function loadPlaceActivities(activities) {
   const $activitiesList = document.querySelector("#place-activities");
-  for (const activity of place.info.activities) {
-    const $amenitieItem = div("list-group-item");
-    $amenitieItem.textContent = activity;
-    $activitiesList.appendChild($amenitieItem);
+  for (const activity of activities) {
+    const $activityItem = div("list-group-item");
+    $activityItem.textContent = activity;
+    $activitiesList.appendChild($activityItem);
   }
+}
 
-  // Localização
+function loadPlaceLocation(location) {
   const $map = document.querySelector("#place-map");
-  $map.appendChild(
-    createMap(place.location.latitude, place.location.longitude)
-  );
+  $map.appendChild(createMap(location.latitude, location.longitude));
+}
 
-  // Fotos
+function loadPlacePhotos(images) {
   const $photosCarousel = document.querySelector("#photos-carousel");
-  for (const [index, photo] of place.images.entries()) {
-    // Create the carousel item
+  for (const [index, photo] of images.entries()) {
     const $carouselItem = createCarouselItem({
       image: photo.src,
       index,
@@ -116,7 +123,6 @@ async function loadDetailPage() {
     });
     $photosCarousel.querySelector(".carousel-inner").appendChild($carouselItem);
 
-    // Create the indicator
     const $indicator = createCarouselIndicator({
       carouselId: "#photos-carousel",
       label: photo.description,
@@ -126,37 +132,73 @@ async function loadDetailPage() {
       .querySelector(".carousel-indicators")
       .appendChild($indicator);
   }
+}
 
-  // Resumo avaliações
+function loadPlaceReviews(reviews) {
   const averageRating =
-    place.reviews.reduce((acc, review) => acc + review.rating, 0) /
-    place.reviews.length;
+    reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length;
   const $ratingIndicator = createRatingIndicator(averageRating);
+
   document.querySelector("#rating-average").textContent =
     averageRating.toFixed(1);
   document.querySelector("#rating-indicator").appendChild($ratingIndicator);
-  document.querySelector("#rating-count").textContent = place.reviews.length;
+  document.querySelector("#rating-count").textContent = reviews.length;
 
-  // Lista de avaliações
   const $reviewsContainer = document.querySelector("#reviews");
-  for (const review of place.reviews) {
+  for (const review of reviews) {
     const $review = createReviewCard(review);
     $reviewsContainer.appendChild($review);
   }
 }
 
-switch (window.location.pathname) {
-  /**
-   * Código para a página inicial
-   */
-  case "/":
-  case "/index.html":
-    loadHomePage();
-    break;
-  /**
-   * Código para a página de detalhes
-   */
-  case "/detalhe.html":
-    loadDetailPage();
-    break;
+async function loadDetailPage() {
+  try {
+    const slug = getSearchParam("slug");
+    const place = await placesRepository.getPlaceBySlug(slug);
+
+    if (!place) {
+      window.location.href = "/";
+      return;
+    }
+
+    updatePlaceBasicInfo(place);
+    loadPlaceHighlights(place.highlights);
+    loadPlaceAmenities(place.info.amenities);
+    loadPlaceActivities(place.info.activities);
+    loadPlaceLocation(place.location);
+    loadPlacePhotos(place.images);
+    loadPlaceReviews(place.reviews);
+  } catch (error) {
+    console.error("Error loading place details:", error);
+    const $mainContent = document.querySelector("main");
+    $mainContent.innerHTML =
+      '<div class="alert alert-danger">Erro ao carregar detalhes do lugar. Por favor, tente novamente mais tarde.</div>';
+  }
 }
+
+async function loadHomePage() {
+  await Promise.all([loadHighlightedPlaces(), loadAllPlaces()]);
+}
+
+// Inicialização da aplicação
+async function initializeApp() {
+  try {
+    switch (window.location.pathname) {
+      case "/":
+      case "/index.html":
+        await loadHomePage();
+        break;
+      case "/detalhe.html":
+        await loadDetailPage();
+        break;
+    }
+  } catch (error) {
+    console.error("Error initializing application:", error);
+    const $mainContent = document.querySelector("main");
+    $mainContent.innerHTML =
+      '<div class="alert alert-danger">Erro ao inicializar a aplicação. Por favor, tente novamente mais tarde.</div>';
+  }
+}
+
+// Inicia a aplicação
+initializeApp();
