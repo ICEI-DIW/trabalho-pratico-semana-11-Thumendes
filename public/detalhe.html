@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos Turístivos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container py-3">
+        <a href="/index.html">
+          <h1>Tourist Spot</h1>
+        </a>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="py-2">
+        <h3 class="mb-6">Informações gerais</h3>
+      </div>
+
+      <h1 id="place-name"></h1>
+
+      <div class="d-flex gap-2 align-items-center mb-3">
+        <div>
+          <span id="rating-average"></span>
+        </div>
+        <!-- Circulos preenchidos até o numero -->
+        <div id="rating-indicator"></div>
+
+        <div>
+          <a href="#avaliacoes"><span id="rating-count"></span> avaliações</a>
+        </div>
+      </div>
+
+      <img id="place-thumbnail" src="" class="w-100" alt="" />
+
+      <ul class="nav nav-tabs mt-3" id="place-content" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="description-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#description-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="description-tab-pane"
+            aria-selected="true"
+          >
+            Descrição
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="highlights-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#highlights-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="highlights-tab-pane"
+            aria-selected="false"
+          >
+            Destaques
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="amenities-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#amenities-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="amenities-tab-pane"
+            aria-selected="false"
+          >
+            Comodidades
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="activities-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#activities-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="activities-tab-pane"
+            aria-selected="false"
+          >
+            Atividades
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="description-tab-pane"
+          role="tabpanel"
+          aria-labelledby="description-tab"
+          tabindex="0"
+        >
+          <p id="place-description" class="py-3"></p>
+
+          <div>
+            <h5 class="mb-6">Informações adicionais</h5>
+
+            <div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-watch"></i>
+                <p id="place-opening-hours">asdfasd</p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-geo-alt-fill"></i>
+                <p id="place-address"></p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-phone"></i>
+                <p id="place-phone"></p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-wallet"></i>
+                <p id="place-price-range"></p>
+              </div>
+              <div class="d-flex gap-2">
+                <i class="bi bi-link"></i>
+                <p id="place-website"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="highlights-tab-pane"
+          role="tabpanel"
+          aria-labelledby="highlights-tab"
+          tabindex="0"
+        >
+          <ul id="place-highlights" class="list-group py-3"></ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="amenities-tab-pane"
+          role="tabpanel"
+          aria-labelledby="amenities-tab"
+          tabindex="0"
+        >
+          <ul id="place-amenities" class="list-group py-3"></ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="activities-tab-pane"
+          role="tabpanel"
+          aria-labelledby="activities-tab"
+          tabindex="0"
+        >
+          <ul id="place-activities" class="list-group py-3"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="py-2">
+        <h3 class="mb-6">Fotos do item</h3>
+      </div>
+
+      <div id="photos-carousel" class="carousel slide">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#photos-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#photos-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container" id="avaliacoes">
+      <div class="py-2">
+        <h3 class="mb-6">Avaliações</h3>
+      </div>
+
+      <div id="reviews"></div>
+    </section>
+
+    <section class="container">
+      <div class="py-2">
+        <h3 class="mb-6">Mapa</h3>
+      </div>
+
+      <div id="place-map"></div>
+    </section>
+
+    <script src="./assets/scripts/app.js" type="module"></script>
+  </body>
+</html>

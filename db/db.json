@@ -1,5 +1,1395 @@
 {
-  "usuarios": [
+  "places": [
+    {
+      "id": "1",
+      "name": "Pirâmides de Gizé",
+      "slug": "pyramids-of-giza",
+      "thumbnail": "./assets/img/pyramids-of-giza/dbeapsfxfdl.jpg",
+      "highlight": false,
+      "description": "As Pirâmides de Gizé são um dos monumentos mais icônicos do mundo antigo, localizadas nos arredores do Cairo, Egito. Construídas há mais de 4.500 anos, elas serviram como tumbas para os faraós egípcios e são consideradas uma das Sete Maravilhas do Mundo Antigo.",
+      "location": {
+        "latitude": 29.9792,
+        "longitude": 31.1342
+      },
+      "highlights": [
+        "Grande Pirâmide de Quéops",
+        "Pirâmide de Quéfren",
+        "Pirâmide de Miquerinos",
+        "Esfinge de Gizé",
+        "Passeios de camelo"
+      ],
+      "info": {
+        "openingHours": "Diariamente, das 8h às 17h",
+        "priceRange": "EGP 200-400 (varia conforme o ingresso)",
+        "amenities": [
+          "Estacionamento",
+          "Guias turísticos",
+          "Lojas de souvenirs",
+          "Restaurantes"
+        ],
+        "activities": [
+          "Visitas guiadas",
+          "Passeios de camelo",
+          "Fotografia",
+          "Exploração arqueológica"
+        ],
+        "contact": "+20 2 3377 6938",
+        "website": "http://egymonuments.gov.eg/",
+        "address": "Al Haram, Nazlet El-Semman, Al Giza Desert, Giza Governorate, Egito"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Taj Mahal",
+      "slug": "taj-mahal",
+      "thumbnail": "./assets/img/taj-mahal/4c4vh1lgw0h.jpg",
+      "highlight": false,
+      "description": "O Taj Mahal é um magnífico mausoléu de mármore branco localizado em Agra, Índia, considerado uma das Sete Maravilhas do Mundo Moderno. Construído pelo imperador Shah Jahan em memória de sua esposa Mumtaz Mahal, o monumento é um símbolo eterno de amor e uma obra-prima da arquitetura mogol.",
+      "location": {
+        "latitude": 27.1751,
+        "longitude": 78.0421
+      },
+      "highlights": [
+        "Arquitetura impressionante em mármore branco",
+        "Jardins simétricos e fontes",
+        "Detalhes artísticos em pedras preciosas",
+        "Patrimônio Mundial da UNESCO"
+      ],
+      "info": {
+        "openingHours": "Todos os dias, exceto sexta-feira, das 6h às 19h",
+        "priceRange": "INR 50-1300",
+        "amenities": [
+          "Guia turístico",
+          "Banheiros",
+          "Lojas de souvenirs",
+          "Cafeteria"
+        ],
+        "activities": ["Visita guiada", "Fotografia", "Passeio pelos jardins"],
+        "contact": "+91 562 222 6431",
+        "website": "https://www.tajmahal.gov.in/",
+        "address": "Dharmapuri, Forest Colony, Tajganj, Agra, Uttar Pradesh 282001, Índia"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Grande Muralha da China",
+      "slug": "great-wall-of-china",
+      "thumbnail": "./assets/img/great-wall-of-china/6cm8mj5kpjo.jpg",
+      "highlight": false,
+      "description": "A Grande Muralha da China é uma das mais impressionantes maravilhas arquitetônicas do mundo, construída ao longo de séculos para proteger o território chinês de invasões. Com milhares de quilômetros de extensão, atravessa montanhas, desertos e vales, oferecendo vistas espetaculares e uma profunda imersão na história chinesa.",
+      "location": {
+        "latitude": 40.4319,
+        "longitude": 116.5704
+      },
+      "highlights": [
+        "Patrimônio Mundial da UNESCO",
+        "Paisagens deslumbrantes",
+        "Tradição milenar",
+        "Arquitetura impressionante"
+      ],
+      "info": {
+        "openingHours": "Aberto diariamente, das 7h30 às 17h30 (varia conforme o trecho)",
+        "priceRange": "¥40-¥60 (varia conforme o trecho)",
+        "amenities": ["Banheiros", "Lojas de souvenirs", "Restaurantes"],
+        "activities": ["Caminhadas", "Fotografia", "Passeios guiados"],
+        "contact": "+86 10 6162 6505",
+        "website": "http://www.greatwall-of-china.com/",
+        "address": "Huairou, Pequim, China"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Stonehenge",
+      "slug": "stonehenge",
+      "thumbnail": "./assets/img/stonehenge/0u5g1rsa1uwn.jpg",
+      "highlight": true,
+      "description": "Stonehenge é um dos monumentos pré-históricos mais famosos do mundo, localizado na planície de Salisbury, na Inglaterra. Composto por um círculo de pedras gigantes, acredita-se que tenha sido construído entre 3000 a.C. e 2000 a.C. O local é envolto em mistério, com teorias sobre seu uso variando de observatório astronômico a local de rituais religiosos.",
+      "location": {
+        "latitude": 51.1789,
+        "longitude": -1.8262
+      },
+      "highlights": [
+        "Círculo de pedras megalíticas",
+        "Patrimônio Mundial da UNESCO",
+        "Paisagem histórica e misteriosa",
+        "Centro de visitantes moderno"
+      ],
+      "info": {
+        "openingHours": "Diariamente, das 9h30 às 17h",
+        "priceRange": "£21.50 - £23.60 (adulto)",
+        "amenities": [
+          "Centro de visitantes",
+          "Loja de souvenirs",
+          "Cafeteria",
+          "Banheiros"
+        ],
+        "activities": [
+          "Visita guiada",
+          "Exposições interativas",
+          "Fotografia",
+          "Caminhadas"
+        ],
+        "contact": "+44 370 333 1181",
+        "website": "https://www.english-heritage.org.uk/visit/places/stonehenge/",
+        "address": "Amesbury, Wiltshire SP4 7DE, Reino Unido"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Palácio de Versalhes",
+      "slug": "versailles-palace",
+      "thumbnail": "./assets/img/versailles-palace/2suy3b9cu69.jpg",
+      "highlight": false,
+      "description": "O Palácio de Versalhes é um dos mais famosos e luxuosos palácios do mundo, localizado nos arredores de Paris, França. Conhecido por sua arquitetura grandiosa, jardins deslumbrantes e importância histórica, foi residência dos reis franceses, incluindo Luís XIV, o Rei Sol.",
+      "location": {
+        "latitude": 48.8049,
+        "longitude": 2.1204
+      },
+      "highlights": [
+        "Salão dos Espelhos",
+        "Jardins de Versalhes",
+        "Galeria das Batalhas",
+        "Aposentos Reais",
+        "Fontes e esculturas"
+      ],
+      "info": {
+        "openingHours": "Terça a domingo, das 9h às 18h30 (fechado às segundas)",
+        "priceRange": "€18-€27 (varia conforme exposições e áreas acessadas)",
+        "amenities": [
+          "Restaurantes",
+          "Lojas de souvenirs",
+          "Banheiros",
+          "Acessibilidade para cadeirantes",
+          "Estacionamento"
+        ],
+        "activities": [
+          "Visitas guiadas",
+          "Passeios pelos jardins",
+          "Exposições temporárias",
+          "Espetáculos de fontes",
+          "Audioguia disponível"
+        ],
+        "contact": "+33 1 30 83 78 00",
+        "website": "https://en.chateauversailles.fr/",
+        "address": "Place d'Armes, 78000 Versailles, França"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Cristo Redentor",
+      "slug": "christ-the-redeemer",
+      "thumbnail": "./assets/img/christ-the-redeemer/uu07bur38d9.jpg",
+      "highlight": true,
+      "description": "O Cristo Redentor é uma das sete maravilhas do mundo moderno e um dos pontos turísticos mais famosos do Brasil. Localizado no topo do Morro do Corcovado, no Rio de Janeiro, a estátua de 38 metros de altura representa Jesus Cristo de braços abertos, simbolizando paz e acolhimento. O monumento oferece uma vista panorâmica deslumbrante da cidade e é um destino imperdível para visitantes de todas as partes do mundo.",
+      "location": {
+        "latitude": -22.9519,
+        "longitude": -43.2105
+      },
+      "highlights": [
+        "Estátua de 38 metros de altura",
+        "Vista panorâmica do Rio de Janeiro",
+        "Patrimônio da Humanidade pela UNESCO",
+        "Acesso por trem, van ou trilha"
+      ],
+      "info": {
+        "openingHours": "Diariamente, das 8h às 19h",
+        "priceRange": "R$ 30 - R$ 100",
+        "amenities": [
+          "Lanchonete",
+          "Loja de souvenirs",
+          "Banheiros",
+          "Acessibilidade para cadeirantes"
+        ],
+        "activities": ["Fotografia", "Passeios guiados", "Trilhas"],
+        "contact": "+55 21 2558-1329",
+        "website": "https://cristoredentoroficial.com.br/",
+        "address": "Parque Nacional da Tijuca, Alto da Boa Vista, Rio de Janeiro - RJ, 22241-125"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Colosseum Arena",
+      "slug": "colosseum-arena",
+      "thumbnail": "./assets/img/colosseum-arena/e9mps7cvuw6.jpg",
+      "highlight": true,
+      "description": "A Colosseum Arena é um espaço multifuncional dedicado a eventos esportivos, shows e grandes espetáculos em um ambiente moderno e confortável. Inspirada na grandiosidade do Coliseu de Roma, oferece infraestrutura de ponta para receber milhares de pessoas com segurança e comodidade.",
+      "location": {
+        "latitude": -23.55052,
+        "longitude": -46.633308
+      },
+      "highlights": [
+        "Arquitetura inspirada no Coliseu de Roma",
+        "Capacidade para grandes públicos",
+        "Eventos esportivos e shows internacionais",
+        "Tecnologia de som e iluminação avançada"
+      ],
+      "info": {
+        "openingHours": "Segunda a domingo, das 8h às 23h",
+        "priceRange": "R$ 50 - R$ 500 (varia conforme o evento)",
+        "amenities": [
+          "Estacionamento",
+          "Acessibilidade",
+          "Praça de alimentação",
+          "Wi-Fi gratuito"
+        ],
+        "activities": ["Shows", "Eventos esportivos", "Feiras e exposições"],
+        "contact": "(11) 4002-8922",
+        "website": "https://www.colosseumarena.com.br",
+        "address": "Av. das Nações Unidas, 12345 - São Paulo, SP, 04578-000"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Grand Canyon",
+      "slug": "grand-canyon",
+      "thumbnail": "./assets/img/grand-canyon/pe0icvan0uj.jpg",
+      "highlight": false,
+      "description": "O Grand Canyon é uma das maravilhas naturais mais impressionantes do mundo, localizado no estado do Arizona, nos Estados Unidos. Com suas paisagens deslumbrantes, formações rochosas únicas e profundos desfiladeiros esculpidos pelo rio Colorado, o Grand Canyon atrai milhões de visitantes todos os anos.",
+      "location": {
+        "latitude": 36.1069,
+        "longitude": -112.1129
+      },
+      "highlights": [
+        "Vistas panorâmicas espetaculares",
+        "Trilhas para caminhadas e trekking",
+        "Passeios de helicóptero",
+        "Pôr do sol inesquecível",
+        "Formações geológicas únicas"
+      ],
+      "info": {
+        "openingHours": "Aberto 24 horas, todos os dias",
+        "priceRange": "US$ 20-35 por veículo",
+        "amenities": [
+          "Estacionamento",
+          "Restaurantes",
+          "Lojas de souvenirs",
+          "Banheiros",
+          "Centro de visitantes"
+        ],
+        "activities": [
+          "Caminhadas",
+          "Passeios de helicóptero",
+          "Observação de aves",
+          "Fotografia",
+          "Camping"
+        ],
+        "contact": "+1 928-638-7888",
+        "website": "https://www.nps.gov/grca/index.htm",
+        "address": "Grand Canyon National Park, Arizona, EUA"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Museu do Louvre",
+      "slug": "louvre-museum",
+      "thumbnail": "./assets/img/louvre-museum/7waev8e2nln.jpg",
+      "highlight": true,
+      "description": "O Museu do Louvre é um dos museus mais famosos e visitados do mundo, localizado em Paris, França. Conhecido por sua vasta coleção de obras de arte, incluindo a icônica Mona Lisa, o Louvre é um símbolo da cultura e história mundial.",
+      "location": {
+        "latitude": 48.8606,
+        "longitude": 2.3376
+      },
+      "highlights": [
+        "Mona Lisa de Leonardo da Vinci",
+        "A Vênus de Milo",
+        "A Coroação de Napoleão",
+        "Pirâmide de vidro do Louvre",
+        "Coleções de arte egípcia, grega, romana e islâmica"
+      ],
+      "info": {
+        "openingHours": "Segunda, quinta, sábado e domingo: 9h às 18h; Quarta e sexta: 9h às 21h45; Fechado às terças-feiras",
+        "priceRange": "€17 (entrada geral)",
+        "amenities": [
+          "Wi-Fi gratuito",
+          "Lojas de souvenirs",
+          "Restaurantes e cafés",
+          "Acessibilidade para cadeirantes",
+          "Guarda-volumes"
+        ],
+        "activities": [
+          "Visitas guiadas",
+          "Exposições temporárias",
+          "Workshops educativos",
+          "Audioguias disponíveis"
+        ],
+        "contact": "+33 1 40 20 50 50",
+        "website": "https://www.louvre.fr/",
+        "address": "Rue de Rivoli, 75001 Paris, França"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Torre Eiffel",
+      "slug": "eiffel-tower",
+      "thumbnail": "./assets/img/eiffel-tower/5wn6j9yqyeu.jpg",
+      "highlight": true,
+      "description": "A Torre Eiffel é um dos monumentos mais icônicos do mundo, localizada em Paris, França. Construída em 1889 para a Exposição Universal, a torre de ferro tem 324 metros de altura e oferece vistas panorâmicas deslumbrantes da cidade. É um símbolo da engenharia e da cultura francesa, atraindo milhões de visitantes todos os anos.",
+      "location": {
+        "latitude": 48.8584,
+        "longitude": 2.2945
+      },
+      "highlights": [
+        "Vistas panorâmicas de Paris",
+        "Restaurantes renomados",
+        "Iluminação noturna espetacular",
+        "Elevadores modernos",
+        "História fascinante"
+      ],
+      "info": {
+        "openingHours": "09:00 - 00:45 (última entrada às 23:45)",
+        "priceRange": "€10 - €26",
+        "amenities": [
+          "Restaurantes",
+          "Lojas de souvenirs",
+          "Banheiros",
+          "Acessibilidade para cadeirantes"
+        ],
+        "activities": [
+          "Subida à torre",
+          "Jantar nos restaurantes",
+          "Fotografia",
+          "Passeios guiados"
+        ],
+        "contact": "+33 892 70 12 39",
+        "website": "https://www.toureiffel.paris/pt",
+        "address": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, França"
+      }
+    },
+    {
+      "id": "11",
+      "name": "Monte Fuji",
+      "slug": "mount-fuji",
+      "thumbnail": "./assets/img/mount-fuji/iurx2t0212f.jpg",
+      "highlight": true,
+      "description": "O Monte Fuji é a montanha mais alta do Japão e um dos seus símbolos mais icônicos. Com 3.776 metros de altitude, é um vulcão ativo que atrai milhões de visitantes todos os anos, seja para escalada, contemplação ou fotografia. Sua forma simétrica e beleza natural inspiram artistas, poetas e viajantes há séculos.",
+      "location": {
+        "latitude": 35.3606,
+        "longitude": 138.7274
+      },
+      "highlights": [
+        "Vistas panorâmicas incríveis",
+        "Trilhas para escalada",
+        "Patrimônio Mundial da UNESCO",
+        "Templos e santuários históricos",
+        "Lagos ao redor do monte"
+      ],
+      "info": {
+        "openingHours": "Aberto o ano todo (temporada de escalada: julho a setembro)",
+        "priceRange": "Gratuito (taxas podem ser aplicadas para trilhas específicas)",
+        "amenities": [
+          "Estacionamento",
+          "Banheiros",
+          "Lojas de souvenirs",
+          "Restaurantes"
+        ],
+        "activities": [
+          "Escalada",
+          "Caminhadas",
+          "Fotografia",
+          "Visitação a templos"
+        ],
+        "contact": "Informações turísticas locais",
+        "website": "https://www.japan-guide.com/e/e2172.html",
+        "address": "Monte Fuji, Honshu, Japão"
+      }
+    },
+    {
+      "id": "12",
+      "name": "A Acrópole",
+      "slug": "the-acropolis",
+      "thumbnail": "./assets/img/the-acropolis/aac2enwsip.jpg",
+      "highlight": true,
+      "description": "A Acrópole é um antigo complexo de templos localizado em Atenas, Grécia, considerado um dos mais importantes símbolos da civilização ocidental. Construída no século V a.C., a Acrópole abriga monumentos icônicos como o Parthenon, o Erecteion e o Templo de Atena Nice. O local é Patrimônio Mundial da UNESCO e atrai milhões de visitantes todos os anos.",
+      "location": {
+        "latitude": 37.9715,
+        "longitude": 23.7267
+      },
+      "highlights": [
+        "Parthenon",
+        "Erecteion",
+        "Templo de Atena Nice",
+        "Vista panorâmica de Atenas",
+        "Museu da Acrópole"
+      ],
+      "info": {
+        "openingHours": "Diariamente, das 8h às 20h (horários podem variar conforme a estação)",
+        "priceRange": "€10-€20",
+        "amenities": [
+          "Banheiros",
+          "Lojas de souvenirs",
+          "Guia de áudio",
+          "Acessibilidade limitada"
+        ],
+        "activities": ["Visitas guiadas", "Fotografia", "Exploração histórica"],
+        "contact": "+30 210 321 4172",
+        "website": "https://www.theacropolismuseum.gr/",
+        "address": "Acrópole de Atenas, Atenas 105 58, Grécia"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "placeId": "1",
+      "reviewer": "Carlos Silva",
+      "review": "Uma experiência incrível! As pirâmides são impressionantes e a história do local é fascinante.",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "placeId": "1",
+      "reviewer": "Mariana Souza",
+      "review": "O passeio de camelo foi divertido e a vista das pirâmides é inesquecível.",
+      "rating": 4.5
+    },
+    {
+      "id": "3",
+      "placeId": "1",
+      "reviewer": "João Pedro",
+      "review": "Lugar imperdível para quem visita o Egito. Recomendo contratar um guia para aproveitar melhor.",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "placeId": "2",
+      "reviewer": "Ana Paula",
+      "review": "Um lugar mágico, a energia e a beleza do Taj Mahal são indescritíveis. Recomendo a visita ao nascer do sol!",
+      "rating": 5
+    },
+    {
+      "id": "5",
+      "placeId": "2",
+      "reviewer": "Carlos Henrique",
+      "review": "A arquitetura é impressionante e a história por trás do monumento é emocionante. Vale cada minuto da visita.",
+      "rating": 5
+    },
+    {
+      "id": "6",
+      "placeId": "2",
+      "reviewer": "Mariana Silva",
+      "review": "Os jardins são lindos e bem cuidados. O local é bastante movimentado, mas ainda assim é possível aproveitar a experiência.",
+      "rating": 4.5
+    },
+    {
+      "id": "7",
+      "placeId": "3",
+      "reviewer": "Carlos Silva",
+      "review": "Uma experiência inesquecível! A vista é de tirar o fôlego e a história do lugar é fascinante.",
+      "rating": 5
+    },
+    {
+      "id": "8",
+      "placeId": "3",
+      "reviewer": "Mariana Souza",
+      "review": "Prepare-se para caminhar bastante, mas vale cada passo. Recomendo ir cedo para evitar multidões.",
+      "rating": 4.5
+    },
+    {
+      "id": "9",
+      "placeId": "4",
+      "reviewer": "Carlos Silva",
+      "review": "Um lugar impressionante, cheio de história e mistério. Vale muito a visita!",
+      "rating": 5
+    },
+    {
+      "id": "10",
+      "placeId": "4",
+      "reviewer": "Mariana Souza",
+      "review": "A experiência no Stonehenge foi incrível, principalmente com as explicações do centro de visitantes.",
+      "rating": 4.5
+    },
+    {
+      "id": "11",
+      "placeId": "4",
+      "reviewer": "João Pereira",
+      "review": "O local é bem organizado e a vista das pedras é fascinante. Recomendo!",
+      "rating": 4.7
+    },
+    {
+      "id": "12",
+      "placeId": "5",
+      "reviewer": "Ana Paula",
+      "review": "Um lugar magnífico, repleto de história e beleza. Os jardins são impressionantes!",
+      "rating": 5
+    },
+    {
+      "id": "13",
+      "placeId": "5",
+      "reviewer": "Carlos Henrique",
+      "review": "O Palácio é grandioso, mas estava muito cheio no dia da visita. Recomendo comprar ingresso antecipado.",
+      "rating": 4.5
+    },
+    {
+      "id": "14",
+      "placeId": "5",
+      "reviewer": "Mariana Silva",
+      "review": "Experiência inesquecível! O Salão dos Espelhos é deslumbrante.",
+      "rating": 5
+    },
+    {
+      "id": "15",
+      "placeId": "6",
+      "reviewer": "Ana Paula",
+      "review": "A vista é simplesmente espetacular! Um lugar que transmite paz e energia positiva.",
+      "rating": 5
+    },
+    {
+      "id": "16",
+      "placeId": "6",
+      "reviewer": "Carlos Henrique",
+      "review": "O acesso é bem organizado e a estrutura do local é ótima. Recomendo a visita!",
+      "rating": 4.5
+    },
+    {
+      "id": "17",
+      "placeId": "6",
+      "reviewer": "Mariana Silva",
+      "review": "Um dos lugares mais lindos que já visitei. Vale cada minuto!",
+      "rating": 5
+    },
+    {
+      "id": "18",
+      "placeId": "7",
+      "reviewer": "Mariana Silva",
+      "review": "Estrutura incrível e organização impecável. Fui a um show e adorei a experiência!",
+      "rating": 5
+    },
+    {
+      "id": "19",
+      "placeId": "7",
+      "reviewer": "Carlos Andrade",
+      "review": "Ótimo local para eventos esportivos, com fácil acesso e boa segurança.",
+      "rating": 4.5
+    },
+    {
+      "id": "20",
+      "placeId": "7",
+      "reviewer": "Fernanda Lopes",
+      "review": "A praça de alimentação tem boas opções e o ambiente é confortável.",
+      "rating": 4
+    },
+    {
+      "id": "21",
+      "placeId": "8",
+      "reviewer": "Carlos Silva",
+      "review": "Uma experiência inesquecível! As paisagens são de tirar o fôlego e o pôr do sol é simplesmente mágico.",
+      "rating": 5
+    },
+    {
+      "id": "22",
+      "placeId": "8",
+      "reviewer": "Mariana Souza",
+      "review": "Ótima infraestrutura para turistas e muitas trilhas para explorar. Recomendo o passeio de helicóptero!",
+      "rating": 5
+    },
+    {
+      "id": "23",
+      "placeId": "8",
+      "reviewer": "João Pereira",
+      "review": "Lugar incrível, mas prepare-se para caminhar bastante. Vale cada minuto!",
+      "rating": 4.5
+    },
+    {
+      "id": "24",
+      "placeId": "9",
+      "reviewer": "Ana Paula",
+      "review": "Uma experiência incrível! O acervo é impressionante e a organização do museu facilita a visita.",
+      "rating": 5
+    },
+    {
+      "id": "25",
+      "placeId": "9",
+      "reviewer": "Carlos Henrique",
+      "review": "O Louvre é imperdível para quem visita Paris. Reserve bastante tempo para explorar tudo.",
+      "rating": 5
+    },
+    {
+      "id": "26",
+      "placeId": "9",
+      "reviewer": "Mariana Silva",
+      "review": "Muito cheio, mas vale a pena pela quantidade de obras famosas.",
+      "rating": 4.5
+    },
+    {
+      "id": "27",
+      "placeId": "10",
+      "reviewer": "Ana Paula",
+      "review": "Visitar a Torre Eiffel foi um sonho realizado! A vista é simplesmente incrível e o pôr do sol lá de cima é inesquecível.",
+      "rating": 5
+    },
+    {
+      "id": "28",
+      "placeId": "10",
+      "reviewer": "Carlos Henrique",
+      "review": "A estrutura é impressionante e vale muito a pena subir até o topo. Recomendo comprar os ingressos antecipadamente.",
+      "rating": 4.5
+    },
+    {
+      "id": "29",
+      "placeId": "10",
+      "reviewer": "Mariana Silva",
+      "review": "Os restaurantes são ótimos e o atendimento foi excelente. Uma experiência única em Paris!",
+      "rating": 5
+    },
+    {
+      "id": "30",
+      "placeId": "11",
+      "reviewer": "Carlos Silva",
+      "review": "Uma experiência inesquecível! A vista do topo é simplesmente espetacular.",
+      "rating": 5
+    },
+    {
+      "id": "31",
+      "placeId": "11",
+      "reviewer": "Mariana Souza",
+      "review": "A subida é desafiadora, mas vale cada passo. Recomendo ir durante a temporada oficial.",
+      "rating": 4.5
+    },
+    {
+      "id": "32",
+      "placeId": "12",
+      "reviewer": "Maria Silva",
+      "review": "Um lugar impressionante, cheio de história e com uma vista incrível da cidade!",
+      "rating": 5
+    },
+    {
+      "id": "33",
+      "placeId": "12",
+      "reviewer": "João Pereira",
+      "review": "Vale muito a pena visitar, principalmente para quem gosta de história antiga.",
+      "rating": 4.5
+    },
+    {
+      "id": "34",
+      "placeId": "12",
+      "reviewer": "Ana Souza",
+      "review": "O Parthenon é magnífico, mas o local pode ficar bem cheio durante o verão.",
+      "rating": 4
+    }
+  ],
+  "images": [
+    {
+      "id": "1",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/nn6z2iiptlr.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "2",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/kocc3g0tmln.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "3",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/dbeapsfxfdl.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "4",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/dnyzu3xt26m.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "6",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/kf6lbzicuh9.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "7",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/2rcxnwtej03.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "8",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/6l3vzj7ged.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "9",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/k5obtm3c0we.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "10",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/s8axn8ej0zl.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "11",
+      "placeId": "1",
+      "src": "./assets/img/pyramids-of-giza/z21bg1z31n.jpg",
+      "description": "pyramids-of-giza"
+    },
+    {
+      "id": "1",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/po4j7t6vi8o.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "2",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/4c4vh1lgw0h.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "3",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/d691x2us3e.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "4",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/g7h73tc495.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "5",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/s5fjku97e.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "6",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/yj64ubkos19.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "7",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/gi62ewdrp9k.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "9",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/26o7g6o3pck.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "10",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/nyj2wmf6ul.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "11",
+      "placeId": "2",
+      "src": "./assets/img/taj-mahal/hb22e5pog9.jpg",
+      "description": "taj-mahal"
+    },
+    {
+      "id": "1",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/tmckz3wzevp.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "2",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/ixagyr8dkz.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "3",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/c093yep77pt.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "4",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/4cajj0pgl0k.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "5",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/pg8lc847h1d.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "6",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/wrcntcabqrc.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "7",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/74ptjueziqk.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "9",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/6cm8mj5kpjo.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "10",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/2nin5r2jiev.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "11",
+      "placeId": "3",
+      "src": "./assets/img/great-wall-of-china/diaumnsjeen.jpg",
+      "description": "great-wall-of-china"
+    },
+    {
+      "id": "1",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/lsca0atndhj.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "2",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/fsgjtay3ak7.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "3",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/lrtaaitnhb.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "4",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/hrg93fviyr6.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "5",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/ke9zxux178.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "6",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/btgd4bgmltf.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "8",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/0u5g1rsa1uwn.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "9",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/edslkujabo4.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "10",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/onn39vbcin.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "11",
+      "placeId": "4",
+      "src": "./assets/img/stonehenge/om8p9fzxfvb.jpg",
+      "description": "stonehenge"
+    },
+    {
+      "id": "1",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/nkgk1hb70m.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "2",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/tvj6nxx1rfc.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "3",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/hrrqelmt2cc.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "4",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/13jnpzejn0w.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "5",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/krbktp7tvt.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "7",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/2suy3b9cu69.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "8",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/fu1qmynr40u.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "9",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/2h6nvaj7ozd.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "10",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/k64pxvvojrg.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "11",
+      "placeId": "5",
+      "src": "./assets/img/versailles-palace/czojh2drfoi.jpg",
+      "description": "versailles-palace"
+    },
+    {
+      "id": "1",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/13sdvu3yvw3.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "2",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/st2x1u24ww.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "3",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/z7oyfsmuhw.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "4",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/4nn6wn61dwb.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "6",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/h90r302f9q6.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "7",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/z89t0zpex5q.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "8",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/uu07bur38d9.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "9",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/l7veisz4jlm.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "10",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/mgdjmsu9q5m.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "11",
+      "placeId": "6",
+      "src": "./assets/img/christ-the-redeemer/luzhfkya8p.jpg",
+      "description": "christ-the-redeemer"
+    },
+    {
+      "id": "1",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/6hfifdt9e72.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "2",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/gazkt5mcugs.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "3",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/du2zld19q1w.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "5",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/r2gkuj29c68.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "6",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/uw357f32flg.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "7",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/o2tr2xkb6.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "8",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/e9mps7cvuw6.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "9",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/ub1dtpl5m5.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "10",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/ejd45fzahiu.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "11",
+      "placeId": "7",
+      "src": "./assets/img/colosseum-arena/9g38r25cjpv.jpg",
+      "description": "colosseum-arena"
+    },
+    {
+      "id": "1",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/t2ubmbrl0yl.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "2",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/5vqr8wy64qf.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "3",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/t0vzvh2hrcr.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "4",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/pe0icvan0uj.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "5",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/9vydcz05qpw.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "6",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/5rrloub24zi.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "7",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/euq2mz1ig8u.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "9",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/4cj7rg6jhlv.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "10",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/q6dd0rlxmdp.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "11",
+      "placeId": "8",
+      "src": "./assets/img/grand-canyon/7aeftlsr.jpg",
+      "description": "grand-canyon"
+    },
+    {
+      "id": "1",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/tg7tnr8z1k.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "2",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/vcu8y0gitmc.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "3",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/ut0e8bg101.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "4",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/3c6wh30ot4u.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "5",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/asz5k2k4wl.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "7",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/h7zbw0716w.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "8",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/lf8y74rxxvc.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "9",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/eazhukb2pvv.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "10",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/7waev8e2nln.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "11",
+      "placeId": "9",
+      "src": "./assets/img/louvre-museum/5ounyp0gq9.jpg",
+      "description": "louvre-museum"
+    },
+    {
+      "id": "1",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/iismmktwwer.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "2",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/fqrvxymchj5.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "4",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/v94i3yckgcr.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "5",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/5wn6j9yqyeu.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "6",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/shfa9ysid7l.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "7",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/vthlifu6bp8.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "8",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/l320zo6arza.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "9",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/r16p8rrjsfs.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "10",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/m1m8epavji.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "11",
+      "placeId": "10",
+      "src": "./assets/img/eiffel-tower/tuph530e1ai.jpg",
+      "description": "eiffel-tower"
+    },
+    {
+      "id": "1",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/bc663hbip3.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "2",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/uicbxwq6gdc.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "4",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/254tq35v82k.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "5",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/1bcx9nkv5xd.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "6",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/m1ovjvs1nyk.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "7",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/8196ero1wlv.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "8",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/8iqdgmz3hn6.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "9",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/b2jsrfpyjga.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "10",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/twph0rxe26.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "11",
+      "placeId": "11",
+      "src": "./assets/img/mount-fuji/iurx2t0212f.jpg",
+      "description": "mount-fuji"
+    },
+    {
+      "id": "1",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/7og0tlaopl.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "2",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/q03uv6vsjg.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "3",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/1l8fczygd0l.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "4",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/ve85dyds36.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "6",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/rvg72ctny98.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "7",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/zl01wxvgut.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "8",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/wx1tefoewvo.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "9",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/aac2enwsip.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "10",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/if7fqi8rmt.jpg",
+      "description": "the-acropolis"
+    },
+    {
+      "id": "11",
+      "placeId": "12",
+      "src": "./assets/img/the-acropolis/3myalquvoll.jpg",
+      "description": "the-acropolis"
+    }
+  ],
+  "users": [
     {
       "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
       "login": "admin",

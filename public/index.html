@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pontos Turístivos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container py-3">
+        <a href="/index.html">
+          <h1>Tourist Spot</h1>
+        </a>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="py-2">
+        <h3 class="mb-6">Itens em Destaque</h3>
+      </div>
+
+      <div id="hightlight-carousel" class="carousel slide">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner"></div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hightlight-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hightlight-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="py-2">
+        <h3>Todos os itens</h3>
+      </div>
+      <div id="places" class="row"></div>
+    </section>
+
+    <section class="container">
+      <div class="py-2">
+        <h3>Informação do Aluno</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-8 mb-3">
+          <header>
+            <a href="#">Sobre</a>
+          </header>
+
+          <p>
+            Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript
+            puro, com o objetivo de apresentar uma lista de pontos turísticos. A
+            aplicação utiliza a API do
+            <a
+              href="https://unsplash.com/developers"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Unsplash</a
+            >
+            para buscar imagens e informações sobre os pontos turísticos
+            utilizando IA.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <header>
+            <a href="#">Autoria</a>
+          </header>
+
+          <div class="d-flex align-items-center">
+            <div>
+              <i class="bi bi-person-fill" style="font-size: 4rem"></i>
+            </div>
+
+            <ul>
+              <li>
+                <span class="fw-bold">Aluno:</span>
+                <span>Arthur Mendes Pereira</span>
+              </li>
+              <li>
+                <span class="fw-bold">Curso:</span>
+                <span>Engenharia de Software</span>
+              </li>
+              <li>
+                <span class="fw-bold">Turma:</span>
+                <span>Noite</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <a href="#">Redes Sociais</a>
+            </div>
+
+            <div class="d-flex gap-3">
+              <a
+                href="https://instagram.com/thumendess"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/thumendes"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/thumendes/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./assets/scripts/app.js" type="module"></script>
+  </body>
+</html>
